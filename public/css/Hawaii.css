@@ -1,0 +1,178 @@
+@font-face {
+    font-family: 'TikiTropic';
+    src: url('/fonts/Tiki\ Tropic\ Bold.ttf');
+}
+
+@font-face {
+    font-family: 'OceanRoad';
+    src: url('/fonts/Ocean\ Road.ttf');
+}
+
+
+body{
+    background-image: url("/img/wall2.png");
+    /* background-color: #abbf97; */
+    background-color: rgb(3,77,138);
+    background-position: center;
+    background-size: cover;
+    margin:5vh auto;
+}
+
+.themes{
+    border:none;
+    background: transparent;
+    padding: 5px 15px;
+}
+
+.themes a{
+    text-decoration: none;
+    font-weight: bold;
+    margin: auto 2px;
+    color:#E3E8C8;
+}
+
+.themes a:hoveR{
+    color:#ced2b6;
+}
+
+
+
+h1{
+    font-family: 'TikiTropic';
+    color:#E0553A;
+    font-size: 80px;
+    font-weight: bold;
+    margin-top: 100px;
+}
+
+h4{
+    color: #20808C;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+p{
+    color:whitesmoke;
+    font-weight: bold;
+    font-size: 35px;
+    margin:0;
+    font-family: 'OceanRoad';
+}
+
+.container{
+    background-color: rgba(10, 10, 10, .1);
+    height: 90vh;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+input{
+    padding: 5px 20px;
+    font-weight: bold;
+    background: transparent;
+    border:none;
+    border-bottom: 2px solid #20808C;
+    color:whitesmoke;
+    text-align: center;
+}
+
+input:focus{
+    outline: none;
+    border-bottom: 2px solid #20808C;
+}
+
+.list-items{
+    border-bottom:1px solid #E3E8C8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 30px;
+    padding: 10px 0px;
+}
+
+.btn{
+    width: 100px;
+    font-weight: bold;
+    margin-left: 20px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+
+.addbtn, .addbtn:hover{
+    color: whitesmoke;
+    background:#20808C;
+    border-color: #20808C;
+}
+
+
+.doneBtn{
+    color: whitesmoke;
+    background: #E6A41A;
+    border-color: #E6A41A;
+}
+
+.doneBtn:hover{
+    color: whitesmoke;
+    background: #DB8F1D;
+    border-color: #DB8F1D;
+}
+
+.removeBtn{
+    color: whitesmoke;
+    background:#E0553A;
+    border-color: #E0553A;
+}
+
+.removeBtn:hover{
+    color: whitesmoke;
+    background:rgb(194, 66, 66);
+    border-color: rgb(194, 66, 66);
+}
+
+.myscroll::-webkit-scrollbar {
+     width: 5px;
+ }
+  
+.myscroll::-webkit-scrollbar-track {
+    background: rgba(10, 10, 10, .4);
+}
+  
+.myscroll::-webkit-scrollbar-thumb {
+    background: rgba(63, 158, 202, 0.637);
+}
+
+
+.myscroll{
+    scrollbar-width: thin;
+    scrollbar-color: rgba(63, 158, 202, 0.637);
+}
+
+del{
+    color: #E0553A;
+    text-decoration: none;
+    position: relative;
+}
+
+del:before {
+    content: '';
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    border-bottom: 3px solid #E0553A;
+} 
+
+
+  @media screen and (max-width: 768px) {
+    h1{
+        font-size: 10vw;
+        margin-top: 50px;
+    }
+  }

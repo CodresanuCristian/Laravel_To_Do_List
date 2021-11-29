@@ -1,0 +1,160 @@
+@font-face {
+    font-family: 'SansationBold';
+    src: url('/fonts/Sansation-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'WalkwayBold';
+    src: url('/fonts/Walkway-Bold.ttf');
+}
+
+*,*::before, *::after{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('/img/wall1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-blend-mode:difference;
+    margin:5vh auto;
+}
+
+.themes{
+    border:none;
+    background: transparent;
+    padding: 5px 15px;
+}
+
+.themes a{
+    text-decoration: none;
+    font-weight: bold;
+    margin: auto 2px;
+}
+
+
+
+h1{
+    font-family: SansationBold;
+    color:rgba(245, 245, 245, 0.678);
+    font-size: 80px;
+    font-weight: bold;
+    margin-top: 100px;
+}
+
+h4{
+    color: rgba(245, 245, 245, 0.678);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+p{
+    color:whitesmoke;
+    font-weight: bold;
+    font-size: 20px;
+    margin:0;
+    font-family: WalkwayBold;
+}
+
+.container{
+    height: 90vh;
+}
+
+input{
+    padding: 5px 20px;
+    font-weight: bold;
+    background: transparent;
+    border:none;
+    border-bottom: 2px solid rgba(245, 245, 245, 0.678);
+    color:rgba(245, 245, 245, 0.678);
+    text-align: center;
+}
+
+input:focus{
+    outline: none;
+    border-bottom: 2px solid whitesmoke;
+}
+
+.list-items{
+    border-bottom:1px solid rgba(211, 211, 211, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 30px;
+    padding: 10px 0px;
+}
+
+.btn{
+    width: 100px;
+    font-weight: bold;
+    margin-left: 20px;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+    background: transparent;
+    color: whitesmoke;
+    border:1px solid rgba(245, 245, 245, 0.678);
+}
+
+
+.addbtn:hover{
+    color: whitesmoke;
+    background:rgb(63, 158, 202);
+    border-color: rgb(63, 158, 202);
+}
+
+
+.doneBtn:hover{
+    color: whitesmoke;
+    background:rgb(125, 184, 125);
+    border-color: rgb(125, 184, 125);
+}
+
+.removeBtn:hover{
+    color: whitesmoke;
+    background:rgb(194, 66, 66);
+    border-color: rgb(194, 66, 66);
+}
+
+.myscroll::-webkit-scrollbar {
+     width: 5px;
+ }
+  
+.myscroll::-webkit-scrollbar-track {
+    background: transparent;
+}
+  
+.myscroll::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+
+
+.myscroll{
+    scrollbar-width: thin;
+    scrollbar-color: rgba(63, 158, 202, 0.637);
+}
+
+del{
+    color: rgb(194, 66, 66);
+    text-decoration: none;
+    position: relative;
+}
+
+del:before {
+    content: '';
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    border-bottom: 3px solid;
+} 
+
+
+  @media screen and (max-width: 768px) {
+    h1{
+        font-size: 10vw;
+        margin-top: 50px;
+    }
+  }
